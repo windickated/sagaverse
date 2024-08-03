@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css"
 
-const { title, header, subheading, arrow } = Astro.props;
+const { title, header, subheading } = Astro.props;
 ---
 
 
@@ -16,8 +16,7 @@ const { title, header, subheading, arrow } = Astro.props;
 	<body>
 
 		<section class="container">
-			{arrow && <a class="icon arrow" href="../CoNexus" aria-label="back-arrow" />} 
-			{!arrow && <a class="icon logo" href="https://degenerousdao.com/" target="_blank" aria-label="dgrs-logo" />}
+			<a class="icon logo" href="https://degenerousdao.com/" target="_blank" aria-label="dgrs-logo" />
 			<p class="header">{ header }</p>
 		</section>
 		<p class="subheading">{ subheading }</p>
