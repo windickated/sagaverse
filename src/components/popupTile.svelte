@@ -29,12 +29,10 @@
       <!-- svelte-ignore a11y-autofocus -->
       <div class="buttons-container">
         <button class="close-button"
-          on:mousedown={() => dialog.close()}
-          on:touchend={() => dialog.close()}
+          on:click={() => dialog.close()}
         >CLOSE</button>
         <button class="play-button"
-          on:mousedown={openGame}
-          on:touchend={openGame}
+          on:click={openGame}
         >{playButton}</button>
       </div>
     </div>
