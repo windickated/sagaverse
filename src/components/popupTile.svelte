@@ -1,0 +1,146 @@
+<script>
+	export let showModal;
+	let dialog; // HTMLDialogElement
+
+	$: if (dialog && showModal) dialog.showModal();
+
+  export let gameDescription;
+  export let descriptionPicture;
+  export let playButton;
+  export let gameLink;
+  function openGame() {
+    window.open(gameLink, '_blank');
+  }
+</script>
+
+<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
+<dialog class="description-tile"
+	bind:this={dialog}
+	on:close={() => (showModal = false)}
+	on:click|self={() => dialog.close()}
+>
+	<!-- svelte-ignore a11y-no-static-element-interactions -->
+	<div on:click|stopPropagation>
+
+		<img class="description-image" src={descriptionPicture} alt="Description" />
+    
+    <div>
+      <p class="description-text">{gameDescription}</p>
+      <!-- svelte-ignore a11y-autofocus -->
+      <div class="buttons-container">
+        <button class="close-button" on:click={() => dialog.close()}>CLOSE</button>
+        <button class="play-button" on:click={openGame}>{playButton}</button>
+      </div>
+    </div>
+	</div>
+</dialog>
+
+<style>
+	.description-tile {
+    width: 90vw;
+    height: 45vw;
+    background-color: rgba(1, 0, 32, 0.75);
+    border: 0.05vw solid rgba(51, 226, 230, 0.75);
+    border-radius: 2.5vw;
+    -webkit-backdrop-filter: blur(1vw);
+    backdrop-filter: blur(1vw);
+	}
+
+	.description-tile::backdrop {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.description-tile[open] {
+		animation: zoom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+	}
+
+	.description-tile[open]::backdrop {
+		animation: fade 0.2s ease-out;
+	}
+
+  .description-tile > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description-tile > div > div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 2.5vw;
+    height: 45vw;
+  }
+
+  .description-image {
+    width: 50%;
+    height: auto;
+    border-radius: 2vw;
+    filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.75))
+  }
+
+  .description-text {
+    font-size: 2vw;
+    line-height: 3.5vw;
+    height: 80%;
+    overflow-y: scroll;
+    color: rgba(51, 226, 230, 0.9);
+  }
+
+  .description-text::-webkit-scrollbar {
+    width: 0.25vw;
+  }
+
+  .description-text::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .description-text::-webkit-scrollbar-thumb {
+    background: rgba(51, 226, 230, 0.25);
+    border-radius: 1vw;
+  }
+
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .play-button, .close-button {
+    padding: 0.5vw 3vw;
+    border: 0.05vw solid rgba(51, 226, 230, 0.75);
+    border-radius: 2vw;
+    outline: none;
+    font-size: 3vw;
+    line-height: 5vw;
+    color: rgba(51, 226, 230, 0.75);
+    background-color: rgba(51, 226, 230, 0.1);
+    filter: drop-shadow(0 0 0.1vw rgba(51, 226, 230, 0.4));
+  }
+
+  .play-button:hover, .close-button:hover, .play-button:active, .close-button:active {
+    color: rgba(51, 226, 230, 1);
+    background-color: rgba(51, 226, 230, 0.5);
+    filter: drop-shadow(0 0 1vw rgba(51, 226, 230, 0.4));
+  }
+
+
+  @keyframes zoom {
+		from {
+			transform: scale(0.95);
+		}
+		to {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+</style>
