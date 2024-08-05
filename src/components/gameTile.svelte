@@ -26,7 +26,7 @@
   on:touchstart={tileHover}
   on:touchend={tileHover}
   on:touchend={() => (showModal = true)}
-  on:touchcancel={() => (showModal = false)}
+  on:touchcancel={() => {}}
 >
   <img class="tile-picture {isPrimary ? 'visible' : ''}" src={primaryThumbnail} alt="{gameName}"/>
   <img class="tile-picture {!isPrimary ? 'visible' : ''}" src={secondaryThumbnail} alt="{gameName}"/>
