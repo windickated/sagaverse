@@ -45,6 +45,7 @@
     border-radius: 2.5vw;
     -webkit-backdrop-filter: blur(1vw);
     backdrop-filter: blur(1vw);
+    overflow-y: hidden;
 	}
 
 	.description-tile::backdrop {
@@ -87,6 +88,10 @@
     height: 80%;
     overflow-y: scroll;
     color: rgba(51, 226, 230, 0.9);
+  }
+
+  .description-tile::-webkit-scrollbar {
+    width: 0;
   }
 
   .description-text::-webkit-scrollbar {
@@ -135,6 +140,7 @@
       width: 85vw;
       height: 80%;
       border-radius: 1em;
+      overflow-y: scroll;
     }
 
     .description-tile > div {
