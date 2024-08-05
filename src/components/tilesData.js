@@ -45,11 +45,3 @@ export const gameDescription = [
     ]
   }
 ]
-
-
-// const thumbnail = '/titlePicture/';
-// const descriptionPicture = '/descriptionPicture/';
-
-// primaryThumbnail: thumbnail + this.game.replace(/\s+/g, '') + '1' + '.avif',
-// secondaryThumbnail: thumbnail + this.game.replace(/\s+/g, '') + '2' + '.avif',
-// descriptionImage: descriptionPicture + this.game.replace(/\s+/g, '') + '.avif'
