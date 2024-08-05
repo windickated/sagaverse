@@ -29,7 +29,7 @@
       <!-- svelte-ignore a11y-autofocus -->
       <div class="buttons-container">
         <button class="close-button"
-          on:click={() => dialog.close()}
+          on:click|stopPropagation={() => dialog.close()}
         >CLOSE</button>
         <button class="play-button"
           on:click={openGame}
