@@ -37,6 +37,7 @@
 
 <style>
 	.description-tile {
+    padding: 1.5vw;
     width: 90vw;
     height: 45vw;
     background-color: rgba(1, 0, 32, 0.75);
@@ -47,20 +48,21 @@
 	}
 
 	.description-tile::backdrop {
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0, 0, 0, 0.75);
 	}
 
 	.description-tile[open] {
-		animation: zoom 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+		animation: zoom 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 	}
 
 	.description-tile[open]::backdrop {
-		animation: fade 0.2s ease-out;
+		animation: fade 0.25s ease-out;
 	}
 
   .description-tile > div {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .description-tile > div > div {
@@ -75,7 +77,7 @@
   .description-image {
     width: 50%;
     height: auto;
-    border-radius: 2vw;
+    border-radius: 1.75vw;
     filter: drop-shadow(0 0 0.5vw rgba(51, 226, 230, 0.75))
   }
 
@@ -110,7 +112,7 @@
   .play-button, .close-button {
     padding: 0.5vw 3vw;
     border: 0.05vw solid rgba(51, 226, 230, 0.75);
-    border-radius: 2vw;
+    border-radius: 1.75vw;
     outline: none;
     font-size: 3vw;
     line-height: 5vw;
@@ -126,9 +128,55 @@
   }
 
 
+  @media only screen and (max-width: 600px) {
+    .description-tile {
+      padding: 1em;
+      padding-bottom: 0;
+      width: 85vw;
+      height: 80%;
+      border-radius: 1em;
+    }
+
+    .description-tile > div {
+      height: 100%;
+      flex-direction: column;
+    }
+
+    .description-image {
+      width: 100%;
+      border-radius: 0.5em;
+    }
+
+    .description-tile > div > div {
+      height: auto;
+      padding-left: 0;
+      padding-top: 1.5em;
+      padding-bottom: 1em;
+    }
+
+    .description-text {
+      height: auto;
+      font-size: 1.1em;
+      line-height: 1.8em;
+      padding-bottom: 1.5em;
+    }
+
+    .buttons-container {
+      width: 100%;
+    }
+
+    .play-button, .close-button {
+      padding: 0.25em 1em;
+      font-size: 1.5em;
+      line-height: 2em;
+      border-radius: 0.5em;
+    }
+  }
+
+
   @keyframes zoom {
 		from {
-			transform: scale(0.95);
+			transform: scale(0.5);
 		}
 		to {
 			transform: scale(1);
