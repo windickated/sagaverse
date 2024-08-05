@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
   }
 
   .play-button, .close-button {
@@ -119,7 +119,7 @@
     border: 0.05vw solid rgba(51, 226, 230, 0.75);
     border-radius: 1.75vw;
     outline: none;
-    font-size: 3vw;
+    font-size: 2.75vw;
     line-height: 5vw;
     color: rgba(51, 226, 230, 0.75);
     background-color: rgba(51, 226, 230, 0.1);
@@ -173,7 +173,7 @@
 
     .play-button, .close-button {
       padding: 0.25em 1em;
-      font-size: 1.5em;
+      font-size: 1.3em;
       line-height: 2em;
       border-radius: 0.5em;
     }

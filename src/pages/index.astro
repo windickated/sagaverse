@@ -27,7 +27,7 @@ let playButton = 'PLAY NOW';
 					primaryThumbnail={tile.primaryThumbnail}
 					secondaryThumbnail={tile.secondaryThumbnail}
 					descriptionPicture={tile.descriptionImage}
-					{playButton}
+					playButton = {tile.isCollab ? "HOW TO PLAY" : "PLAY NOW"}
 					client:load
 				/>
 			)}

@@ -10,7 +10,8 @@ export const gameDescription = [
         gameLink: arcadeLink + 'Battle-for-Nexon/',
         primaryThumbnail: '/titlePicture/BattleforNexon1.avif',
         secondaryThumbnail: '/titlePicture/BattleforNexon2.avif',
-        descriptionImage: '/descriptionPicture/BattleforNexon.avif'
+        descriptionImage: '/descriptionPicture/BattleforNexon.avif',
+        isCollab: false
       },
       {
         game: "Ark Assassin",
@@ -19,7 +20,8 @@ export const gameDescription = [
         gameLink: arcadeLink + 'Ark-Assassin/',
         primaryThumbnail: '/titlePicture/ArkAssassin1.avif',
         secondaryThumbnail: '/titlePicture/ArkAssassin2.avif',
-        descriptionImage: '/descriptionPicture/ArkAssassin.avif'
+        descriptionImage: '/descriptionPicture/ArkAssassin.avif',
+        isCollab: false
       },
       {
         game: "Last Stand",
@@ -27,7 +29,8 @@ export const gameDescription = [
         gameLink: arcadeLink + 'Iron-Lion-Last-Stand/',
         primaryThumbnail: '/titlePicture/LastStand1.avif',
         secondaryThumbnail: '/titlePicture/LastStand2.avif',
-        descriptionImage: '/descriptionPicture/LastStand.avif'
+        descriptionImage: '/descriptionPicture/LastStand.avif',
+        isCollab: false
       }
     ]
   },
@@ -40,7 +43,8 @@ export const gameDescription = [
         gameLink: 'https://degenerousdao.gitbook.io/wiki/products/sagaverse-gaming/the-dark-zoo',
         primaryThumbnail: '/titlePicture/TheDarkZoo1.avif',
         secondaryThumbnail: '/titlePicture/TheDarkZoo2.avif',
-        descriptionImage: '/descriptionPicture/TheDarkZoo.avif'
+        descriptionImage: '/descriptionPicture/TheDarkZoo.avif',
+        isCollab: true
       }
     ]
   }

@@ -22,9 +22,10 @@
 <div class="tile" id="{gameName}"
   on:mouseenter={tileHover}
   on:mouseleave={tileHover}
+  on:mouseup={() => (showModal = true)}
   on:touchstart={tileHover}
   on:touchend={tileHover}
-  on:click={() => (showModal = true)}
+  on:touchend={() => (showModal = true)}
 >
   <img class="tile-picture {isPrimary ? 'visible' : ''}" src={primaryThumbnail} alt="{gameName}"/>
   <img class="tile-picture {!isPrimary ? 'visible' : ''}" src={secondaryThumbnail} alt="{gameName}"/>
