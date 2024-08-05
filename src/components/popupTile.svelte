@@ -28,8 +28,14 @@
       <p class="description-text">{gameDescription}</p>
       <!-- svelte-ignore a11y-autofocus -->
       <div class="buttons-container">
-        <button class="close-button" on:click={() => dialog.close()}>CLOSE</button>
-        <button class="play-button" on:click={openGame}>{playButton}</button>
+        <button class="close-button"
+          on:mousedown={() => dialog.close()}
+          on:touchend={() => dialog.close()}
+        >CLOSE</button>
+        <button class="play-button"
+          on:mousedown={openGame}
+          on:touchend={openGame}
+        >{playButton}</button>
       </div>
     </div>
 	</div>
