@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import games from "../components/tilesData.js";
+import { gameDescription } from "../components/tilesData.js";
 import GameTile from "../components/gameTile.svelte"
 
 const title = 'Sagaverse | DeGenerous';
@@ -14,7 +14,7 @@ These experiences, created by ourselves, as well as in collaboration with our We
 
 <Layout {title} {header} {subheading}>
 
-	{games.map(collection =>
+	{gameDescription.map(collection =>
 		<p class="tiles-collection-legend">{collection.section}</p>
 
 		<section class="tiles-collection">
