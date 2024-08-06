@@ -22,7 +22,7 @@
 <div class="tile" id="{gameName}"
   on:mouseenter={tileHover}
   on:mouseleave={tileHover}
-  on:click={() => (showModal = true)}
+  on:click|stopPropagation={() => (showModal = true)}
   on:touchstart={tileHover}
   on:touchend={tileHover}
 >
