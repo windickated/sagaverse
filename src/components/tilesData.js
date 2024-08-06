@@ -1,6 +1,6 @@
 const arcadeLink = 'https://arcade.degenerousdao.com/';
 
-export const gameDescription = [
+const games = [
   {
     section: 'OUR GAMES',
     items: [
@@ -49,3 +49,5 @@ export const gameDescription = [
     ]
   }
 ]
+
+export default games;
