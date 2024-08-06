@@ -14,11 +14,11 @@ These experiences, created by ourselves, as well as in collaboration with our We
 
 <Layout {title} {header} {subheading}>
 
-	{gameDescription.map((collection) =>
+	{gameDescription.map(collection =>
 		<p class="tiles-collection-legend">{collection.section}</p>
 
 		<section class="tiles-collection">
-			{collection.items.map((tile) => 
+			{collection.items.map(tile => 
 				<GameTile 
 					gameName={tile.game}
 					gameDescription={tile.description}
