@@ -145,7 +145,6 @@
       height: 80%;
       border-radius: 1em;
       overflow-y: scroll;
-      border: 0.1em solid rgba(51, 226, 230, 0.5);
     }
 
     .description-tile > div {
@@ -156,8 +155,6 @@
     .description-image {
       width: 100%;
       border-radius: 0.5em;
-      border: 0.05em solid rgba(51, 226, 230, 0.75);
-      filter: drop-shadow(0 0 0.25em rgba(51, 226, 230, 0.75))
     }
 
     .description-tile > div > div {
@@ -183,7 +180,6 @@
       font-size: 1.3em;
       line-height: 2em;
       border-radius: 0.5em;
-      border: 0.05em solid rgba(51, 226, 230, 0.5);
     }
   }
 
