@@ -25,7 +25,7 @@ export const gameDescription = [
       },
       {
         game: "Battle for Nexon",
-        description: `In "Battle for Nexon," you play as Agent Zero, humanity's last hope in the Intelligence Wars - a brutal conflict raging across the galaxy between humans and the forces of an Artificial Intelligence overlord known as the Architect. On a mission to assassinate General Binath-VII, an AI warlord infamous for decimating human colonies, you journey to the mysterious planet of Nexon. However, your plans are thwarted when your ship is tracked and surrounded by the General's AI fleet, forcing you into an unexpected battle.`,
+        description: `Play as Agent Zero, humanity's last hope in the Intelligence Wars. On a mission to assassinate an AI warlord infamous for decimating human colonies, you journey to the planet of Nexon. However, your ship gets surrounded by the General's AI fleet, forcing you into an unexpected battle.`,
         gameLink: arcadeLink + 'Battle-for-Nexon/',
         primaryThumbnail: '/titlePicture/BattleforNexon1.avif',
         secondaryThumbnail: '/titlePicture/BattleforNexon2.avif',
