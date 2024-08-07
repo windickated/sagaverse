@@ -42,8 +42,8 @@
 <style>
 	.description-tile {
     padding: 1.5vw;
-    width: 90vw;
-    height: 45vw;
+    width: 80vw;
+    height: 40vw;
     background-color: rgba(1, 0, 32, 0.75);
     border: 0.05vw solid rgba(51, 226, 230, 0.75);
     border-radius: 2.5vw;
@@ -75,7 +75,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-left: 2.5vw;
-    height: 45vw;
+    height: 40vw;
   }
 
   .description-image {
@@ -122,7 +122,7 @@
     border: 0.05vw solid rgba(51, 226, 230, 0.75);
     border-radius: 1.75vw;
     outline: none;
-    font-size: 2.75vw;
+    font-size: 2.4vw;
     line-height: 5vw;
     color: rgba(51, 226, 230, 0.75);
     background-color: rgba(51, 226, 230, 0.1);
