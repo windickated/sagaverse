@@ -95,7 +95,7 @@ const { title, header, subheading, footer } = Astro.props;
 					margin: 0.25em auto;
 				}
 
-				.subheading {
+				.subheading, .footer {
 					font-size: inherit;
 					line-height: 1.6em;
 					padding: 1em;
@@ -106,6 +106,10 @@ const { title, header, subheading, footer } = Astro.props;
 					backdrop-filter: blur(2vw);
 					border: 0.1vw solid rgba(51, 226, 230, 0.5);
     			border-radius: 2.5vw;
+				}
+
+				.footer {
+					margin-top: 1em;
 				}
 
 				a {
