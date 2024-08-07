@@ -5,12 +5,12 @@ export const gameDescription = [
     section: 'OUR GAMES',
     items: [
       {
-        game: "Battle for Nexon",
-        description: `In "Battle for Nexon," you play as Agent Zero, humanity's last hope in the Intelligence Wars - a brutal conflict raging across the galaxy between humans and the forces of an Artificial Intelligence overlord known as the Architect. On a mission to assassinate General Binath-VII, an AI warlord infamous for decimating human colonies, you journey to the mysterious planet of Nexon. However, your plans are thwarted when your ship is tracked and surrounded by the General's AI fleet, forcing you into an unexpected battle.`,
-        gameLink: arcadeLink + 'Battle-for-Nexon/',
-        primaryThumbnail: '/titlePicture/BattleforNexon1.avif',
-        secondaryThumbnail: '/titlePicture/BattleforNexon2.avif',
-        descriptionImage: '/descriptionPicture/BattleforNexon.avif',
+        game: "Last Stand",
+        description: `Play as Iron Lion, the greatest soldier of the human Insurgency, as you're up against waves of AI robots on the planet of Veridian Prime. You're left all alone with a mission to save time for Agent Zero, as humanity's only chance for a future.`,
+        gameLink: arcadeLink + 'Iron-Lion-Last-Stand/',
+        primaryThumbnail: '/titlePicture/LastStand1.avif',
+        secondaryThumbnail: '/titlePicture/LastStand2.avif',
+        descriptionImage: '/descriptionPicture/LastStand.avif',
         isCollab: false
       },
       {
@@ -24,12 +24,12 @@ export const gameDescription = [
         isCollab: false
       },
       {
-        game: "Last Stand",
-        description: `Play as Iron Lion, the greatest soldier of the human Insurgency, as you're up against waves of AI robots on the planet of Veridian Prime. You're left all alone with a mission to save time for Agent Zero, as humanity's only chance for a future.`,
-        gameLink: arcadeLink + 'Iron-Lion-Last-Stand/',
-        primaryThumbnail: '/titlePicture/LastStand1.avif',
-        secondaryThumbnail: '/titlePicture/LastStand2.avif',
-        descriptionImage: '/descriptionPicture/LastStand.avif',
+        game: "Battle for Nexon",
+        description: `In "Battle for Nexon," you play as Agent Zero, humanity's last hope in the Intelligence Wars - a brutal conflict raging across the galaxy between humans and the forces of an Artificial Intelligence overlord known as the Architect. On a mission to assassinate General Binath-VII, an AI warlord infamous for decimating human colonies, you journey to the mysterious planet of Nexon. However, your plans are thwarted when your ship is tracked and surrounded by the General's AI fleet, forcing you into an unexpected battle.`,
+        gameLink: arcadeLink + 'Battle-for-Nexon/',
+        primaryThumbnail: '/titlePicture/BattleforNexon1.avif',
+        secondaryThumbnail: '/titlePicture/BattleforNexon2.avif',
+        descriptionImage: '/descriptionPicture/BattleforNexon.avif',
         isCollab: false
       }
     ]
