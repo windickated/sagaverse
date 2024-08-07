@@ -185,7 +185,7 @@
 
   @keyframes zoom {
 		from {
-			transform: scale(0.5);
+			transform: scale(1.5);
 		}
 		to {
 			transform: scale(1);
