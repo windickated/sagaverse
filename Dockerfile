@@ -1,17 +1,20 @@
-FROM docker.io/oven/bun:latest
+# Builder Stage
+FROM node:18-alpine AS builder
 
+# Set the working directory inside the container
 WORKDIR /app
 
-COPY package.json .
+# Copy package.json and package-lock.json to the working directory
+COPY package*.json ./
 
-COPY bun.lockb .
+# Install dependencies
+RUN npm install
 
-RUN bun install
+# Copy the rest of the application code to the working directory
+COPY . .
 
-COPY . /app
+# Build the Next.js application
+RUN npm run build
 
-# build the app
-RUN bun run build
-
-# start the app
-CMD ["bun", "start"]
+# Start the Next.js application
+CMD ["npm", "start"]
